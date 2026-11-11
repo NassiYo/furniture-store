@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    .filters {
+        right: -231px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .top__heading {
+        margin-top: 82px;
+    }
+    .controls-bar {
+        flex-direction: column;
+    }
+
+    .filters {
+        left: 0;
+        max-width: 286px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        &__right {
+            margin-bottom: 4px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+@media (max-width: 1024px) {
+    .cart {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 64px;
+        &__content {
+            grid-row: span 1;
+            grid-column: 1 / -1;
+        }
+        &__form-box {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+
+        
+        &__button {
+            &_continue {
+                padding-left: 20px;
+                padding-right: 20px;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .top_cart {
+        background-position: 70%;
+    }
+    .cart {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+        padding-top: 92px;
+
+        &__name-box {
+            display: none;
+        }
+
+        &__img {
+            display: none;
+        }
+        &__info {
+            gap: 0;
+        }
+        &__item {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            &-header {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+            &-desc {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+            &-price {
+                font-size: 12px;
+                margin-bottom: 13px;
+            }
+            &-qty {
+                justify-self: end;
+            }
+        }
+        &__left {
+            grid-column: span 3;
+            min-height: 0;
+        }
+        &__button-box {
+            margin-top: 0;
+        }
+        &__button {
+            font-size: 12px;
+            &_clear {
+                padding-right: 26px;
+                padding-left: 26px;
+            }
+            &_continue {
+                padding-right: 12px;
+                padding-left: 12px;
+            }
+            &_order {
+                font-size: 16px;
+            }
+        }
+
+        &__form-box {
+            min-height: 100vh;
+            grid-column: 1 / -1;
+
+        }
+        &__link {
+            line-height: 210%;
+        }
+    }
+
+    
+}
+

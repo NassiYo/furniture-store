@@ -1,0 +1,30 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .for {
+        &__content {
+            gap: 30px;
+        }
+        &__item {
+            min-height: 265px;
+            &_big {
+                min-height: 268px;
+            }
+        }
+
+    }
+    .product-content {
+        column-gap: 29px;
+        row-gap: 30px;
+    }
+
+    .footer {
+        &__logo {
+            display: none;
+        }
+    }
+
+    
+}
